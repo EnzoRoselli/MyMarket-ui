@@ -1,0 +1,25 @@
+
+$base-color: $color-base-green;
+
+.navbar{
+    display: inline-block;
+    border-radius: $border-radius-1;
+    background-color: $base-color;
+}
+
+.navbar-list{
+    @extend .horizontal-list;
+    padding: 0 5rem;
+    &-item{
+        margin: 1.5rem 5rem;
+        font-size: $font-size-medium;
+        color: $color-base-white;
+        font-weight: 500; 
+        cursor: pointer;
+        transition: all .3s ease-in;
+
+        @media only screen and (max-width: 768px) {
+            margin: 1.5rem 1rem;
+        }
+    }
+}

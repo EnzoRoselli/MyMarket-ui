@@ -1,0 +1,9 @@
+.logo-brand{
+    font-family: $font-family-oleo;
+    font-size: $font-size-xlarge-micro;
+    color: $color-base-green;
+
+    @media only screen and (max-width: 768px) {
+        font-size: $font-size-medium-extra;
+    }
+}
